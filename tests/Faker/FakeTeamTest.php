@@ -22,22 +22,6 @@ class FakeTeamTest extends TestCase
         $this->faker = $faker;
     }
 
-    public function getProtectedProperty( $property, $class = null )
-    {
-        if( is_null($class))
-        {
-            $class = new FakeTeam($this->faker);
-        }
-
-        $reflection = new \ReflectionClass($class);
-        $reflection_property = $reflection->getProperty($property);
-        $reflection_property->setAccessible(true);
-
-        return $reflection_property->getValue($class, $property);
-    }
-
-
-
     public function testTeam()
     {
         $this->assertTrue(
