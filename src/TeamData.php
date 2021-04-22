@@ -9,7 +9,7 @@ class TeamData
         return static::$teamNames;
     }
 
-    protected static $teamNames = array(
+    protected static $teamNames = [
         'Bears',
         'Heats',
         'Lakers',
@@ -66,6 +66,6 @@ class TeamData
         'Jets',
         'Pistons',
         'Clippers'
-    );
+    ];
 
 }

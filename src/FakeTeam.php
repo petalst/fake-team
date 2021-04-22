@@ -40,7 +40,7 @@ class FakeTeam extends Base
      */
     public static function randomElement($array = []) : string
     {
-        return $array[mt_rand(0,  count($array))];
+        return $array[mt_rand(0,  count($array) - 1)];
     }
 
 }
